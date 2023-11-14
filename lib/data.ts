@@ -16,13 +16,28 @@ import {
   SiGit,
   SiDocker,
   SiBootstrap,
-  SiMui,
+  SiSanity,
   SiPrisma,
   SiFlutter,
-  SiHeroku,
+  SiMysql,
   SiTailwindcss,
+  SiPhp,
+  SiGithub,
+  SiUml,
+  SiC,
+  SiAssemblyscript,
+  SiLaravel,
+  SiVercel,
+  SiCisco,
+  SiNpm,
+  SiLinux,
+  SiApple,
+  SiWindows,
+  SiInstagram
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { title } from "process";
+import { link } from "fs";
 
 export const skills = [
   {
@@ -46,12 +61,12 @@ export const skills = [
     text: "Tailwind",
   },
   {
-    icon: SiRedux,
-    text: "Redux",
+    icon: SiLaravel,
+    text: "Laravel",
   },
   {
-    icon: SiFlutter,
-    text: "Flutter",
+    icon: SiVercel,
+    text: "Vercel",
   },
   {
     icon: SiHtml5,
@@ -82,28 +97,44 @@ export const skills = [
     text: "MongoDB",
   },
   {
-    icon: SiAmazonaws,
-    text: "AWS",
+    icon: SiNpm,
+    text: "npm",
   },
   {
-    icon: SiHeroku,
-    text: "Heroku",
+    icon: SiMysql,
+    text: "MySQL",
   },
   {
-    icon: SiSupabase,
-    text: "Supabase",
+    icon: SiPhp,
+    text: "PHP",
   },
   {
-    icon: SiFirebase,
-    text: "Firebase",
+    icon: SiC,
+    text: "C",
   },
   {
     icon: SiGit,
     text: "Git",
   },
   {
-    icon: SiDocker,
-    text: "Docker",
+    icon: SiGithub,
+    text: "Github",
+  },
+  {
+    icon: SiLinux,
+    text: "Linux",
+  },
+  {
+    icon: SiWindows,
+    text: "Windows",
+  },
+  {
+    icon: SiApple,
+    text: "MacOS",
+  },
+  {
+    icon: SiUml,
+    text: "UML",
   },
   {
     icon: SiPrisma,
@@ -114,8 +145,8 @@ export const skills = [
     text: "Bootstrap",
   },
   {
-    icon: SiMui,
-    text: "MUI",
+    icon: SiSanity,
+    text: "Sanity",
   },
 ];
 
@@ -127,94 +158,83 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Project 1",
-    description: "Give a short description about project 1",
-    link: "https://github.com/",
+    title: "Pea-archive",
+    description: "Web shop made in Next.js 14 and Sanity to organize the products. Stripe purchase API for shop the products.",
+    link: "https://pea-iota.vercel.app",
   },
   {
-    title: "Project 2",
-    description: "Give a short description about project 2",
-    link: "https://github.com/",
+    title: "Votion",
+    description: "This is my personal Notion free clone made with Next.js 13 with Auth and more APIs. Try it and tell me what do you think!",
+    link: "https://votion-weld.vercel.app",
   },
   {
-    title: "Project 3",
-    description: "Give a short description about project 3",
-    link: "https://github.com/",
+    title: "ewentus.com",
+    description: "This project is my first frontend application in real context. Is a usefull web application made with a friend using standard front-end stack and js, in PHP framework and MySQL database.",
+    link: "https://ewentus.com/",
   },
   {
-    title: "Project 4",
-    description: "Give a short description about project 4",
-    link: "https://github.com/",
-  },
-  {
-    title: "Project 5",
-    description: "Give a short description about project 5",
-    link: "https://github.com/",
-  },
-  {
-    title: "Project 6",
-    description: "Give a short description about project 6",
-    link: "https://github.com/",
-  },
+    title: "Github",
+    description: "This is my github profile!",
+    link: "https://github.com/leovurchio01",
+  }
 ];
+
+
 
 export interface WorkExperience {
   company: string;
-  logo: string;
+
   position: string;
   description: string;
   years: string;
 }
 
 export const workExperiences: WorkExperience[] = [
+
   {
-    company: "Company 3",
-    logo: "/company-logo.png",
-    position: "Company 3 Position",
-    description: "Write briefly on your experience working at Company 3.",
-    years: "Apr, 2022 - Aug, 2023",
-  },
-  {
-    company: "Company 2",
-    logo: "/company-logo.png",
-    position: "Company 2 Position",
-    description: "Write briefly on your experience working at Company 2.",
-    years: "Jan, 2020 - Mar, 2022",
-  },
-  {
-    company: "Company 1",
-    logo: "/company-logo.png",
-    position: "Company 1 Position",
-    description: "Write briefly on your experience working at Company 1.",
-    years: "Aug, 2018 - Sep, 2018",
-  },
-  {
-    company: "Uni Name",
-    logo: "/company-logo.png",
+    company: "Università degli Studi di Milano",
+   
     position: "Student",
     description:
-      "Write briefly about your university experience (degree, subject, etc.)",
-    years: "Aug, 2015 - Jun, 2019",
+      "Actually studying cyber security for computer systems & networks",
+    years: "Sep,2021 - Today",
+  },
+  {
+    company: "Cisco",
+   
+    position: "Student",
+    description:
+      "Cisco CCNA degree for Networks architecture",
+    years: "Sep,2021 - 2023",
+  },
+  {
+    company: "IIS Leonardo da Vinci, Carate Brianza",
+   
+    position: "Student",
+    description:
+      "High school degree in ICT ( Information & Computer Technologies)",
+    years: "Sep,2015 - 2021",
   },
 ];
 
 export const aboutYou = {
-  name: "Your Name",
+  name: "Leonardo Vurchio",
   description:
-    "👋 Hi, I'm Random Person. Developer. I'm passionate about.... This is a short description about yourself.... goes in the left sidebar of the landing page.",
-  yearsOfExperience: "x years",
-  location: "Your Place",
-  email: "email@example.com",
+    "👋  Hi there! I am a software developer who enjoys building amazing applications with code. My journey into software development began with a simple curiosity. I craved a deeper understanding of how things work behind the scenes. Currently, my primary focus is on participating in the vibrant Web3 ecosystem. I am eager to connect with like-minded developers and collaborate on projects that leverage technology to improve our society. Building great software that makes a positive impact is my ultimate goal.I’m always open to new opportunities and challenges, so feel free to reach out if you share a passion for technology and a drive to create meaningful solutions.",
+  yearsOfExperience: "5 years",
+  location: "Monza, IT",
+  email: "leovurchio01@gmail.com",
 };
 
-export const logoText = "@yourname";
+export const logoText = "@leovurchio";
 
 export const marketingHeadlines = {
-  mainHeadline: "This is the MAIN headline.",
-  subHeadline: "Bottom. Sub. Headline.",
+  mainHeadline: "Build your future right now.",
+  subHeadline: "Bottom.\nSub.\nHeadline.",
 };
 
 export const websiteMetadata = {
-  title: "Your Name | Designation",
-  description: "👋 Hey, Random Person here. Welcome to my portflio/blog.",
+  title: "Leonardo Vurchio | Web Developement",
+  description: "👋 Hey you! Welcome to my portflio.",
 };
+

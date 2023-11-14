@@ -19,15 +19,6 @@ export default function Navbar() {
       {/* Navigation Menus */}
       <div className="space-x-3 items-center">
         <Button
-          onClick={() => navigateTo("/")}
-          variant="outline"
-          size="sm"
-          className="ml-auto h-8"
-        >
-          <Home className=" h-4 w-4" />
-          <span className="hidden md:block ml-2">Home</span>
-        </Button>
-        <Button
           onClick={() => navigateTo("/#projects")}
           variant="outline"
           size="sm"
