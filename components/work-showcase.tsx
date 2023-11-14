@@ -17,10 +17,7 @@ export default function WorkShowcase({
       <div className="space-y-2 ">
         <div className="flex justify-between">
           <div className="flex items-center space-x-4">
-            <Avatar>
-              <AvatarImage src={experience.logo} />
-              <AvatarFallback>AB</AvatarFallback>
-            </Avatar>
+            
             <h3 className="font-semibold leading-none tracking-tight">
               {experience.company}
             </h3>

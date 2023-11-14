@@ -229,8 +229,8 @@ export const aboutYou = {
 export const logoText = "@leovurchio";
 
 export const marketingHeadlines = {
-  mainHeadline: "Build your future right now.",
-  subHeadline: "Bottom.\nSub.\nHeadline.",
+  mainHeadline: "Welcome to my Portfolio 👨🏽‍💻",
+  subHeadline: "Hello there! This portfolio is not just a showcase of my projects and career journey but a testament to my commitment to building secure and robust web solutions.I am actively seeking collaborations with fellow web developers who share a passion for creating secure and reliable web solutions. If you have a project or idea, let's join forces to bring it to life. My cybersecurity background ensures that the solutions we build are not only functional but also resilient against potential threats. Encountering issues with your web development projects? Whether it's a security vulnerability, performance optimization, or debugging challenge, I thrive on problem-solving. With a solid foundation in both web development and cybersecurity, I bring a unique perspective to troubleshoot and fortify your digital presence. Ready to discuss a collaboration or need assistance with a web development challenge? Feel free to reach out. I'm always open to new opportunities, partnerships, and interesting projects.",
 };
 
 export const websiteMetadata = {

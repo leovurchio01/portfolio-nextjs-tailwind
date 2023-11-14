@@ -1,6 +1,7 @@
 import ActionButton from "@/components/action-button";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import Polygons from "@/components/polygons";
 import ProjectShowcase from "@/components/project-showcase";
 import Sidebar from "@/components/sidebar";
 import SkillOutline from "@/components/skill-outline";
@@ -19,7 +20,9 @@ import {
 
 export default function Home() {
   return (
+    
     <div className="md:max-w-3xl mx-auto md:mt-8 ">
+     
       <Navbar />
       <div className="flex flex-col md:flex-row my-10 mx-10 md:mx-0 space-x-0 md:space-x-10 space-y-10 md:space-y-0 ">
         <Sidebar />
@@ -36,7 +39,7 @@ export default function Home() {
               <Separator />
             </div>
             <div className="flex justify-between">
-              <ActionButton actionText="Hire me" />
+              <ActionButton actionText="Reach me"  />
               <div className="space-y-1">
                 <h3 className="font-medium leading-none">
                   {aboutYou.yearsOfExperience}
@@ -50,7 +53,7 @@ export default function Home() {
                 <p className="text-xs text-muted-foreground">Location</p>
               </div>
             </div>
-            <div className="space-y-1">
+            <div className="space-y-1 ">
               <div className="space-y-2">
                 {skills.map((skill) => (
                   <SkillOutline
@@ -76,7 +79,7 @@ export default function Home() {
           </section>
           {/* Work */}
           <section id="work" key="work">
-            <h2 className="text-2xl font-semibold tracking-tight">Work</h2>
+            <h2 className="text-2xl font-semibold tracking-tight">Carreer</h2>
             <div className="mt-5 rounded-xl border bg-card text-card-foreground shadow">
               <div className="p-6 space-y-6">
                 {workExperiences.map(
@@ -104,6 +107,7 @@ export default function Home() {
         </div>
       </div>
       <Footer />
+      
     </div>
   );
 }

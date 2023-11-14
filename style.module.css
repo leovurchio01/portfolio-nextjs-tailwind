@@ -1,0 +1,35 @@
+/* Polygons.module.css */
+
+@keyframes growShrink {
+    0%, 100% {
+      transform: scale(0);
+    }
+    20%, 80% {
+      transform: scale(1);
+    }
+    40%, 60% {
+      transform: scale(2);
+    }
+  }
+  
+  .animatePolygon {
+    animation: growShrink 15s infinite ease-in-out;
+  }
+  
+  .delay1 {
+    animation-delay: 2s;
+  }
+  
+  .delay2 {
+    animation-delay: 4s;
+  }
+  
+  .delay3 {
+    animation-delay: 1s;
+  }
+  .blur3xl {
+    filter: blur(5.5rem); /* Adjust the blur radius as needed */
+  }
+  
+  /* Aggiungi ulteriori delay se necessario */
+  
